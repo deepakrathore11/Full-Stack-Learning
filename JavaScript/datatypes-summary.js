@@ -17,7 +17,10 @@ const space = null
 console.log(typeof space)
 // 6. Symbol
 const id = Symbol("123")
+const anotherID = Symbol("123")
 console.log(typeof id);
+console.log(id === anotherID);
+
 // 7. BigInt
 let score2 = 1893484n
 console.log(typeof score2);
@@ -44,6 +47,8 @@ const myFunction = function(){
 }
 console.log(typeof myFunction);
 console.log(myFunction());
+
+// https://262.ecma-international.org/5.1/#sec-11.4.3
 
 
 
