@@ -52,3 +52,28 @@ console.log(myFunction());
 
 
 
+//+++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack (Primitive)
+
+let myname =  "DeepakRathore"
+
+let anotherName = myname
+anotherName = "RathoreDeepak"
+
+console.log(myname);
+console.log(anotherName);
+
+// Heap (Non-Primitive)
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "deepak@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
