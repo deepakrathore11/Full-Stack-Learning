@@ -54,7 +54,7 @@ console.log(myFunction());
 
 //+++++++++++++++++++++++++++++++++++++++++++++++
 
-// Stack (Primitive)
+// Stack (Primitive) Made a Copy 
 
 let myname =  "DeepakRathore"
 
@@ -64,7 +64,7 @@ anotherName = "RathoreDeepak"
 console.log(myname);
 console.log(anotherName);
 
-// Heap (Non-Primitive)
+// Heap (Non-Primitive) Give a reference
 
 let userOne = {
     email: "user@google.com",
