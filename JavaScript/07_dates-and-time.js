@@ -34,7 +34,7 @@ let anotherDate = `${newDate.getDay()} and the time`
 console.log(anotherDate);
 
 
-// Example
+// Example -->
 console.log(newDate.toLocaleString("default", {
     weekday: "long",
     timeZone: "Asia/Kolkata"
