@@ -30,7 +30,8 @@ let state;
 // symbol => unique
 
 
-// object
-
+// typeof
 console.log(typeof undefined); // undefined
 console.log(typeof null); // object
+console.log(typeof Symbol()); // symbol datatype but a function
+console.log(typeof Boolean()); // boolean datatype but a function
