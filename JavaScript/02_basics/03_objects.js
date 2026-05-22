@@ -1,4 +1,5 @@
 // singleton
+// object.create 
 
 //object literals
 const mySym = Symbol("key1")
@@ -19,13 +20,6 @@ console.log(jsUser["email"]);
 console.log(jsUser["full name"]);
 console.log(jsUser[mySym]);
 
-// update object and freeze object
-jsUser.email = "deepak@google.com"
-Object.freeze(jsUser) // freeze value
-console.log(jsUser.email);
-jsUser.email = "deepak@microsoft.com"
-console.log(jsUser.email);
-
 // Function inside object
 jsUser.greeting = function(){
     console.log("Hello JS user");
@@ -35,3 +29,12 @@ jsUser.greetingTwo = function(){
 }
 console.log(jsUser.greeting());
 console.log(jsUser.greetingTwo());
+
+
+// update object and freeze object
+jsUser.email = "deepak@google.com"
+Object.freeze(jsUser) // freeze value
+console.log(jsUser.email);
+
+jsUser.email = "deepak@microsoft.com"
+console.log(jsUser.email);
