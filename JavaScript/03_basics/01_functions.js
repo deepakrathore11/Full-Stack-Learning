@@ -13,14 +13,14 @@ function sayMyName() {
     console.log("A");
     console.log("K");
 }
-// sayMyName()
+sayMyName()
 
 // option 1
-// function addTwoNumbers(num1, num2) {
-//     console.log(num1 + num2);
-// }
+function addTwoNumbers(num1, num2) {
+ console.log(num1 + num2);
+}
 // addTwoNumbers() // output NaN not a number
-// addTwoNumbers(2, 2) // output 4
+console.log(addTwoNumbers(2, 2)); // output 4
 // addTwoNumbers(2, "2") // output 22
 // addTwoNumbers(2, "a") // output 2a
 // addTwoNumbers(2, null) // output 2
@@ -34,8 +34,8 @@ function addTwoNumbers(num1, num2) {
 //option 3 
    return num1 + num2
 }
-// const result = addTwoNumbers(3, 5)
-// console.log("Result: ", result);
+const result = addTwoNumbers(4, 4)
+console.log("Result: ", result);
 
 function loginUserMessage(username){
     // if (username === undefined) {
@@ -45,5 +45,38 @@ function loginUserMessage(username){
     }
     return `${username} Just Logged In`
 }
-// console.log(loginUserMessage("deepu"));
-console.log(loginUserMessage());
+console.log(loginUserMessage()); // if undefined it will show message on terminal.
+console.log(loginUserMessage("deepu"));
+
+
+function calculateCartPrice(... num1){  // (...) here is rest operator.
+    return num1
+}
+console.log(calculateCartPrice(200, 400, 500));
+
+
+const user = {
+    username: "Deepak",
+    price: 199,
+}
+function handelObject(anyObject){
+    console.log(`Username is ${anyObject.username} and price is ${anyObject.price}`);
+    
+}
+handelObject(user)
+
+handelObject({
+    username: "sam",
+    price: 399
+})
+
+const myNewArray = [200, 400, 600, 800]
+function returnSecondValue(anyArray) {
+    return anyArray[1]
+}
+console.log(returnSecondValue(myNewArray));
+
+function returnThirdValue(anyArray) {
+    return anyArray[3]
+}
+console.log(returnThirdValue([200, 400, 600, 800]));
